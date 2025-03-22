@@ -237,6 +237,7 @@ table {
     border: grey solid 1px;
     border-radius: 10px;
     border-collapse: collapse;
+    width-max: 400px;
 }
 
 th, td{
