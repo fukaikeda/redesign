@@ -1,0 +1,282 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+.navbar {
+    padding: 20px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    background-color: white;
+    width: 100%;
+}
+
+.buttonbox {
+    background-color: white;
+    overflow: hidden;
+}
+
+.buttonbox a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px 20px;
+    float: left;
+    display: block;
+    text-align: center;
+}
+
+.buttonbox .icon {
+    display: none;
+  }
+
+.logo img{
+    height: 70px;
+}
+
+.button {
+    color: black;
+    border: none;
+    background: #FFEB00;
+    font-size: 20px;
+    font-weight: bold;
+    width: 140px;
+    padding: 15px;
+    border-radius: 30px;
+    text-align: center;
+    text-decoration: none;
+    box-shadow: 2px 2px 8px grey;
+}
+.box-top {
+    height: 30px;
+    background-color: #487EBF;
+    margin-top: 20px;
+}
+
+.box-bottom {
+    height: 30px;
+    background-color: #FEEA00;
+    margin-bottom: 20px;
+}
+
+.box-three {
+    height: 30px;
+    background-color: #487EBF;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.box-four {
+    height: 30px;
+    background-color: #FEEA00;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.image-container {
+    height: 600px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url('images/driving.png');
+    position: relative;
+    overflow: hidden;
+    background-size: cover;
+}
+
+.text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+    font-weight: bold;
+    text-align: center;
+}
+
+.text-overlay h1 {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.text-overlay p {
+    font-size: 18pt;
+    font-weight: normal;
+    margin-bottom: 30px;
+}
+
+.text-overlay b{
+    color: black;
+    background: #FFEB00;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 20px 20px;
+    border-radius: 30px;
+    text-align: center;
+    box-shadow: 2px 2px 8px grey;
+    width: 180px;
+}
+
+
+.row{
+    display: flex;
+}
+
+.column{
+   flex: 50%;
+   justify-content: center;
+   margin-bottom: 30px;
+}
+
+.header2{
+    display: flex;
+    font-size: 38px;
+    text-align: center;
+    justify-content: center;
+    font-weight: bold;
+    padding: 20px 20px;
+}
+
+.paragraph{
+    text-align: center;
+    font-size: 20px;
+    margin: auto;
+}
+
+.footer{
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.footerhead{
+    margin-top: 30px;
+    font-size: 22px;
+    margin-left: 80px;
+    margin-right: 80px;
+    text-align: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+
+.footerpar{
+    font-size: 18px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    margin-left: 80px;
+    margin-right: 80px;
+    text-align: center;
+    justify-content: center;
+}
+
+.calendly-inline-widget{
+    margin-top: 30px;
+    margin-left: 80px;
+    margin-right: 80px;
+    text-align: center;
+    justify-content: center;
+}
+
+.dropdown{
+    margin-top: 20px;
+    position: relative;
+    text-align: center;
+    justify-content: center;
+}
+
+.dropbtn{
+    background-color: white;
+    color: black;
+    border: 2px solid grey;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: lighter;
+    padding: 15px 30px;
+    width: 200px;
+    cursor: pointer;
+    text-align: center;
+    box-shadow: 2px 2px 8px grey;
+}
+
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: white;
+    font-size: 20px;
+    width: 180px;
+    border: 2px solid grey;
+    border-radius: 10px;
+    text-align: center;
+    top: 100%; 
+    left: 50%; 
+    line-height: 1.6; 
+    transform: translateX(-50%);  /* Technique learned by asking ChatGPT about CSS debugging*/
+}
+
+.dropdown:hover .dropdown-content{
+    display: block;
+    text-align: center;
+    justify-content: center;
+    position: absolute;
+}
+
+.tablecontainer {
+    margin: auto;
+    margin-top: 20px;
+}
+
+table {
+    display: table;
+    margin: auto;
+    border-spacing: 2px;
+    width: 80%;
+    justify-content: center;
+    text-align: center;
+    border: grey solid 1px;
+    border-radius: 10px;
+    border-collapse: collapse;
+}
+
+th, td{
+    padding: 12px;
+    text-align: left;
+    border: 1px solid grey;
+    height: 100px;
+    font-weight: normal;
+    
+}
+
+
+.down img{
+    height: 15px;
+    margin-right: 10px;
+}
+
+/* Refrenced https://www.w3schools.com/howto/howto_js_topnav_responsive.asp for responsive function*/
+
+
+@media screen and (max-width: 950px){
+    .buttonbox a{display: none;}
+    .buttonbox a.icon{
+        float: right;
+        display: block;
+    }
+}
+
+@media screen and (max-width: 950px){
+    .buttonbox.responsive{
+        position: relative;
+    }
+    .buttonbox.responsive a.icon{
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .buttonbox.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+      }
+}
